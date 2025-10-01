@@ -1,6 +1,7 @@
 # Netlify configuration for Angular SPA
 [build]
   command = "./build-netlify.sh"
+  publish = "dist/netzica/browser"
 
 # SPA routing - redirect all routes to index.html
 [[redirects]]
@@ -27,4 +28,4 @@
 
 # Environment variables for construction mode
 [build.environment]
-  NODE_VERSION = "18"
+  NODE_VERSION = "22.12"
