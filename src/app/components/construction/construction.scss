@@ -1,0 +1,24 @@
+/* Construction Page Styles */
+.construction-page {
+  @apply min-h-screen bg-gradient-to-br from-primary-50 to-primary-100 dark:from-surface-900 dark:to-surface-800;
+}
+
+.construction-card {
+  @apply shadow-lg border-0;
+}
+
+.access-button {
+  @apply w-full py-3;
+}
+
+.logout-button {
+  @apply w-full py-3;
+}
+
+.construction-icon {
+  @apply w-20 h-20 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-4;
+}
+
+.success-icon {
+  @apply w-20 h-20 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4;
+}

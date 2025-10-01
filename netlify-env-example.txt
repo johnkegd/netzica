@@ -1,0 +1,13 @@
+# Netlify Environment Variables
+# Add these to your Netlify site settings under Site Settings > Environment Variables
+
+# Construction Mode Password
+CONSTRUCTION_PASSWORD=your-secure-password-here
+
+# Example values:
+# CONSTRUCTION_PASSWORD=netzica2024
+# CONSTRUCTION_PASSWORD=my-super-secret-password-123
+# CONSTRUCTION_PASSWORD=dev-preview-2024
+
+# Note: This password will be used for the construction mode access
+# Make sure to use a strong password for production

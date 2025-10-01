@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators, ReactiveFormsModule, FormControl } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { InputTextModule } from 'primeng/inputtext';
 import { TextareaModule } from 'primeng/textarea';
@@ -21,7 +21,13 @@ import { ButtonModule } from 'primeng/button';
   styleUrl: './contact-form.scss'
 })
 export class ContactFormComponent implements OnInit {
-  contactForm!: FormGroup;
+  contactForm!: FormGroup<{
+    firstName: FormControl<string | null>;
+    company: FormControl<string | null>;
+    email: FormControl<string | null>;
+    budget: FormControl<string | null>;
+    message: FormControl<string | null>;
+  }>;
   
   budgetOptions = [
     { label: 'Under $10k', value: 'under-10k' },
