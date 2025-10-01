@@ -1,16 +1,23 @@
-import { Component } from '@angular/core';
-import { AppTopbar } from './components/app.topbar';
-import { StatsWidget } from "./components/dashboard/statswidget";
-import { SalesTrendWidget } from "./components/dashboard/salestrendwidget";
-import { RecentActivityWidget } from "./components/dashboard/recentactivitywidget";
-import { ProductOverviewWidget } from "./components/dashboard/productoverviewwidget";
+import { Component } from "@angular/core";
+import { NavigationComponent } from "./components/navigation/navigation";
 import { AppFooter } from "./components/app.footer";
-
+import { RightAlignedImage } from "./components/marketing/right-aligned-image/right-aligned-image";
+import { ThreeTiers } from "./components/threetiers/threetiers";
+import { FeaturesTimelineComponent } from "./components/features-timeline/features-timeline";
+import { SimpleBanner } from "./components/marketing/simple-banner/simple-banner";
+import { ContactFormComponent } from "./components/contact-form/contact-form";
 @Component({
-  selector: 'app-root',
-  imports: [AppTopbar, StatsWidget, SalesTrendWidget, RecentActivityWidget, ProductOverviewWidget, AppFooter],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  selector: "app-root",
+  imports: [
+    NavigationComponent,
+    AppFooter,
+    RightAlignedImage,
+    ThreeTiers,
+    FeaturesTimelineComponent,
+    SimpleBanner,
+    ContactFormComponent,
+  ],
+  templateUrl: "./app.component.html",
+  styleUrl: "./app.component.scss",
 })
-export class AppComponent {
-}
+export class AppComponent {}

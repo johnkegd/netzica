@@ -1,0 +1,24 @@
+/* Custom styles for features timeline component */
+.customized-timeline {
+  .p-timeline-event-marker {
+    @apply border-0;
+  }
+  
+  .p-timeline-event-connector {
+    @apply border-surface-300 dark:border-surface-600;
+  }
+  
+  .feature-card {
+    .p-card {
+      @apply shadow-lg border border-surface-200 dark:border-surface-700;
+    }
+    
+    .p-card-header {
+      @apply text-xl font-bold text-surface-900 dark:text-surface-0;
+    }
+    
+    .p-card-content {
+      @apply p-0;
+    }
+  }
+}

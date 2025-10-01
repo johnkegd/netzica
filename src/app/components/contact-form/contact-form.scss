@@ -1,0 +1,31 @@
+/* Contact Form Component Styles */
+.field {
+  @apply mb-4;
+}
+
+.p-inputtext,
+.p-textarea,
+.p-dropdown {
+  @apply w-full;
+}
+
+.p-button {
+  @apply px-8 py-3;
+}
+
+/* Social Media Links */
+.social-link {
+  @apply w-12 h-12 bg-primary-600 text-white rounded-lg flex items-center justify-center hover:bg-primary-700 transition-colors;
+}
+
+/* Form Validation */
+.field-error {
+  @apply text-red-500 text-sm mt-1;
+}
+
+/* Responsive Grid */
+@media (max-width: 768px) {
+  .contact-grid {
+    @apply grid-cols-1;
+  }
+}
