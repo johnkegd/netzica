@@ -1,10 +1,7 @@
 import { Component, OnInit } from "@angular/core";
-import { RightAlignedImage } from "./components/marketing/right-aligned-image/right-aligned-image";
 import { ThreeTiers } from "./components/threetiers/threetiers";
 import { FeaturesTimelineComponent } from "./components/features-timeline/features-timeline";
-import { SimpleBanner } from "./components/marketing/simple-banner/simple-banner";
 import { ContactFormComponent } from "./components/contact-form/contact-form";
-import { BrandedBannerComponent } from "./components/branded-banner/branded-banner";
 import { Hero3dEmojiComponent } from "./components/hero-3d-emoji/hero-3d-emoji";
 import { CloudsSeparatorComponent } from "./components/clouds-separator/clouds-separator";
 import { AuthCheckService } from "./services/auth-check.service";
@@ -16,12 +13,9 @@ import { SEOService } from "./services/seo.service";
   selector: "app-main",
   imports: [
     MainLayoutComponent,
-    RightAlignedImage,
     ThreeTiers,
     FeaturesTimelineComponent,
-    SimpleBanner,
     ContactFormComponent,
-    BrandedBannerComponent,
     Hero3dEmojiComponent,
     CloudsSeparatorComponent,
     FaqSection,
