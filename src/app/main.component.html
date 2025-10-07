@@ -1,15 +1,19 @@
-<app-navigation />
-<div
-  class="bg-surface-50 dark:bg-surface-950 min-h-screen flex flex-col"
->
-<right-aligned-image></right-aligned-image>
-  <div class="flex flex-col w-full max-w-7xl mx-auto gap-6 flex-1 p-8">
-    <app-features-timeline />
-    <three-tiers />
+<app-main-layout>
+  <app-hero-3d-emoji [secondaryButtonVisible]="false">
+  </app-hero-3d-emoji>
+  <app-clouds-separator />
+  <div class="dark:bg-surface-950 min-h-screen flex flex-col">
+    <div id="pricing" class="flex flex-col w-full max-w-7xl mx-auto gap-6 flex-1 p-8">
+      <app-features-timeline />
+      <three-tiers />
+    </div>
+    <section class="flex flex-col w-full max-w-7xl mx-auto gap-6 flex-1 p-8">
+      <div class="px-20">
+        <app-faq-section />
+      </div>
+    </section>
+    <div class="flex flex-col w-full max-w-7xl mx-auto gap-6 flex-1 p-8">
+      <app-contact-form />
+    </div>
   </div>
-  <simple-banner />
-  <div class="flex flex-col w-full max-w-7xl mx-auto gap-6 flex-1 p-8">
-    <app-contact-form />
-  </div>
-  <app-footer />
-</div>
+</app-main-layout>

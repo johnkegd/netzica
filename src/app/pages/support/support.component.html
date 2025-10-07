@@ -1,0 +1,227 @@
+<app-page-layout>
+  <app-hero-section 
+    title="Help Center"
+    subtitle="Get the support you need, when you need it">
+    <p-button label="Contact Support" icon="pi pi-envelope" class="p-button-lg"></p-button>
+    <p-button label="Live Chat" icon="pi pi-comments" class="p-button-outlined p-button-lg"></p-button>
+  </app-hero-section>
+
+  <app-section-layout 
+    title="How Can We Help?"
+    subtitle="Choose the support option that works best for you">
+    
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <p-card class="h-full hover:shadow-xl transition-shadow duration-300">
+        <ng-template pTemplate="header">
+          <div class="p-6 text-center bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20">
+            <i class="pi pi-envelope text-5xl text-primary-500 mb-4"></i>
+            <h3 class="text-xl font-semibold text-surface-900 dark:text-surface-0">Email Support</h3>
+          </div>
+        </ng-template>
+        <ng-template pTemplate="content">
+          <p class="text-surface-600 dark:text-surface-400 mb-6">
+            Send us an email and we'll get back to you within 24 hours with a detailed response.
+          </p>
+          <ul class="space-y-3 text-sm mb-6">
+            <li class="flex items-center">
+              <i class="pi pi-check text-primary-500 mr-3"></i>
+              <span>24-hour response time</span>
+            </li>
+            <li class="flex items-center">
+              <i class="pi pi-check text-primary-500 mr-3"></i>
+              <span>Detailed technical assistance</span>
+            </li>
+            <li class="flex items-center">
+              <i class="pi pi-check text-primary-500 mr-3"></i>
+              <span>File attachments supported</span>
+            </li>
+          </ul>
+          <p-button label="Send Email" icon="pi pi-send" class="w-full"></p-button>
+        </ng-template>
+      </p-card>
+
+      <p-card class="h-full hover:shadow-xl transition-shadow duration-300">
+        <ng-template pTemplate="header">
+          <div class="p-6 text-center bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900/20 dark:to-green-800/20">
+            <i class="pi pi-comments text-5xl text-primary-500 mb-4"></i>
+            <h3 class="text-xl font-semibold text-surface-900 dark:text-surface-0">Live Chat</h3>
+          </div>
+        </ng-template>
+        <ng-template pTemplate="content">
+          <p class="text-surface-600 dark:text-surface-400 mb-6">
+            Chat with our support team in real-time for immediate assistance with your hosting needs.
+          </p>
+          <ul class="space-y-3 text-sm mb-6">
+            <li class="flex items-center">
+              <i class="pi pi-check text-primary-500 mr-3"></i>
+              <span>Instant responses</span>
+            </li>
+            <li class="flex items-center">
+              <i class="pi pi-check text-primary-500 mr-3"></i>
+              <span>Screen sharing available</span>
+            </li>
+            <li class="flex items-center">
+              <i class="pi pi-check text-primary-500 mr-3"></i>
+              <span>Available 24/7</span>
+            </li>
+          </ul>
+          <p-button label="Start Chat" icon="pi pi-comment" class="w-full"></p-button>
+        </ng-template>
+      </p-card>
+
+      <p-card class="h-full hover:shadow-xl transition-shadow duration-300">
+        <ng-template pTemplate="header">
+          <div class="p-6 text-center bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-900/20 dark:to-purple-800/20">
+            <i class="pi pi-phone text-5xl text-primary-500 mb-4"></i>
+            <h3 class="text-xl font-semibold text-surface-900 dark:text-surface-0">Phone Support</h3>
+          </div>
+        </ng-template>
+        <ng-template pTemplate="content">
+          <p class="text-surface-600 dark:text-surface-400 mb-6">
+            Speak directly with our technical experts for complex issues that require immediate attention.
+          </p>
+          <ul class="space-y-3 text-sm mb-6">
+            <li class="flex items-center">
+              <i class="pi pi-check text-primary-500 mr-3"></i>
+              <span>Direct expert consultation</span>
+            </li>
+            <li class="flex items-center">
+              <i class="pi pi-check text-primary-500 mr-3"></i>
+              <span>Priority queue access</span>
+            </li>
+            <li class="flex items-center">
+              <i class="pi pi-check text-primary-500 mr-3"></i>
+              <span>Business hours: 9 AM - 6 PM EST</span>
+            </li>
+          </ul>
+          <p-button label="Call Now" icon="pi pi-phone" class="w-full"></p-button>
+        </ng-template>
+      </p-card>
+    </div>
+  </app-section-layout>
+
+  <app-section-layout 
+    title="Knowledge Base"
+    subtitle="Find answers to common questions and learn how to make the most of your hosting"
+    backgroundColor="bg-surface-50 dark:bg-surface-900">
+    
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="bg-white dark:bg-surface-800 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+        <div class="flex items-center mb-4">
+          <div class="w-12 h-12 bg-blue-100 dark:bg-blue-900/30 rounded-lg flex items-center justify-center mr-4">
+            <i class="pi pi-cog text-xl text-primary-500"></i>
+          </div>
+          <h3 class="text-lg font-semibold">Getting Started</h3>
+        </div>
+        <p class="text-surface-600 dark:text-surface-400 mb-4">
+          Learn the basics of setting up your hosting account and managing your websites.
+        </p>
+        <ul class="space-y-2 text-sm">
+          <li class="flex items-center">
+            <i class="pi pi-angle-right text-primary-500 mr-2"></i>
+            <span>Account Setup Guide</span>
+          </li>
+          <li class="flex items-center">
+            <i class="pi pi-angle-right text-primary-500 mr-2"></i>
+            <span>Domain Configuration</span>
+          </li>
+          <li class="flex items-center">
+            <i class="pi pi-angle-right text-primary-500 mr-2"></i>
+            <span>Email Setup</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="bg-white dark:bg-surface-800 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+        <div class="flex items-center mb-4">
+          <div class="w-12 h-12 bg-green-100 dark:bg-green-900/30 rounded-lg flex items-center justify-center mr-4">
+            <i class="pi pi-shield text-xl text-primary-500"></i>
+          </div>
+          <h3 class="text-lg font-semibold">Security</h3>
+        </div>
+        <p class="text-surface-600 dark:text-surface-400 mb-4">
+          Keep your websites secure with our comprehensive security guides and best practices.
+        </p>
+        <ul class="space-y-2 text-sm">
+          <li class="flex items-center">
+            <i class="pi pi-angle-right text-primary-500 mr-2"></i>
+            <span>SSL Certificate Setup</span>
+          </li>
+          <li class="flex items-center">
+            <i class="pi pi-angle-right text-primary-500 mr-2"></i>
+            <span>Firewall Configuration</span>
+          </li>
+          <li class="flex items-center">
+            <i class="pi pi-angle-right text-primary-500 mr-2"></i>
+            <span>Backup Strategies</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="bg-white dark:bg-surface-800 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+        <div class="flex items-center mb-4">
+          <div class="w-12 h-12 bg-purple-100 dark:bg-purple-900/30 rounded-lg flex items-center justify-center mr-4">
+            <i class="pi pi-wrench text-xl text-primary-500"></i>
+          </div>
+          <h3 class="text-lg font-semibold">Technical Guides</h3>
+        </div>
+        <p class="text-surface-600 dark:text-surface-400 mb-4">
+          Advanced technical documentation for developers and system administrators.
+        </p>
+        <ul class="space-y-2 text-sm">
+          <li class="flex items-center">
+            <i class="pi pi-angle-right text-primary-500 mr-2"></i>
+            <span>Server Configuration</span>
+          </li>
+          <li class="flex items-center">
+            <i class="pi pi-angle-right text-primary-500 mr-2"></i>
+            <span>Database Management</span>
+          </li>
+          <li class="flex items-center">
+            <i class="pi pi-angle-right text-primary-500 mr-2"></i>
+            <span>Performance Optimization</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </app-section-layout>
+
+  <app-section-layout 
+    title="Still Need Help?"
+    subtitle="Our support team is here to help you succeed. Contact us through any of these channels.">
+    
+    <div class="grid md:grid-cols-3 gap-8 mb-12">
+      <div class="text-center">
+        <div class="w-16 h-16 bg-primary-100 dark:bg-primary-900/30 rounded-full flex items-center justify-center mx-auto mb-4">
+          <i class="pi pi-envelope text-2xl text-primary-500"></i>
+        </div>
+        <h3 class="text-lg font-semibold mb-2">Email</h3>
+        <p class="text-surface-600 dark:text-surface-400">support@netzica.ch</p>
+        <p class="text-sm text-surface-500">24-hour response</p>
+      </div>
+
+      <div class="text-center">
+        <div class="w-16 h-16 bg-primary-100 dark:bg-primary-900/30 rounded-full flex items-center justify-center mx-auto mb-4">
+          <i class="pi pi-phone text-2xl text-primary-500"></i>
+        </div>
+        <h3 class="text-lg font-semibold mb-2">Phone</h3>
+        <p class="text-surface-600 dark:text-surface-400">+41 44 123 4567</p>
+        <p class="text-sm text-surface-500">Mon-Fri 9AM-6PM EST</p>
+      </div>
+
+      <div class="text-center">
+        <div class="w-16 h-16 bg-primary-100 dark:bg-primary-900/30 rounded-full flex items-center justify-center mx-auto mb-4">
+          <i class="pi pi-comments text-2xl text-primary-500"></i>
+        </div>
+        <h3 class="text-lg font-semibold mb-2">Live Chat</h3>
+        <p class="text-surface-600 dark:text-surface-400">Available 24/7</p>
+        <p class="text-sm text-surface-500">Instant support</p>
+      </div>
+    </div>
+
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <p-button label="Contact Support" icon="pi pi-envelope" class="p-button-lg"></p-button>
+      <p-button label="View FAQ" icon="pi pi-question-circle" routerLink="/faq" class="p-button-outlined p-button-lg"></p-button>
+    </div>
+  </app-section-layout>
+</app-page-layout>

@@ -1,0 +1,306 @@
+<app-page-layout>
+  <app-hero-section 
+    title="Hosting Solutions for Every Business"
+    subtitle="From startups to enterprises, we have the perfect hosting solution for your needs">
+    <p-button label="Get Started" icon="pi pi-rocket" class="p-button-lg"></p-button>
+    <p-button label="View Pricing" icon="pi pi-dollar" routerLink="/pricing" class="p-button-outlined p-button-lg"></p-button>
+  </app-hero-section>
+
+  <app-section-layout 
+    title="Industry Solutions"
+    subtitle="Tailored hosting solutions for different industries and use cases">
+    
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <p-card class="h-full hover:shadow-xl transition-shadow duration-300">
+        <ng-template pTemplate="header">
+          <div class="p-6 text-center bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20">
+            <i class="pi pi-shopping-cart text-5xl text-primary-500 mb-4"></i>
+            <h3 class="text-xl font-semibold text-surface-900 dark:text-surface-0">E-commerce</h3>
+          </div>
+        </ng-template>
+        <ng-template pTemplate="content">
+          <p class="text-surface-600 dark:text-surface-400 mb-6">
+            High-performance hosting optimized for online stores with secure payment processing and inventory management.
+          </p>
+          <ul class="space-y-3 text-sm mb-6">
+            <li class="flex items-center">
+              <i class="pi pi-check text-primary-500 mr-3"></i>
+              <span>SSL certificates for secure transactions</span>
+            </li>
+            <li class="flex items-center">
+              <i class="pi pi-check text-primary-500 mr-3"></i>
+              <span>CDN for fast global delivery</span>
+            </li>
+            <li class="flex items-center">
+              <i class="pi pi-check text-primary-500 mr-3"></i>
+              <span>Database optimization</span>
+            </li>
+            <li class="flex items-center">
+              <i class="pi pi-check text-primary-500 mr-3"></i>
+              <span>24/7 monitoring</span>
+            </li>
+          </ul>
+          <p-button label="Learn More" icon="pi pi-arrow-right" class="w-full"></p-button>
+        </ng-template>
+      </p-card>
+
+      <p-card class="h-full hover:shadow-xl transition-shadow duration-300">
+        <ng-template pTemplate="header">
+          <div class="p-6 text-center bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900/20 dark:to-green-800/20">
+            <i class="pi pi-graduation-cap text-5xl text-primary-500 mb-4"></i>
+            <h3 class="text-xl font-semibold text-surface-900 dark:text-surface-0">Education</h3>
+          </div>
+        </ng-template>
+        <ng-template pTemplate="content">
+          <p class="text-surface-600 dark:text-surface-400 mb-6">
+            Reliable hosting for educational institutions, online learning platforms, and student portals.
+          </p>
+          <ul class="space-y-3 text-sm mb-6">
+            <li class="flex items-center">
+              <i class="pi pi-check text-primary-500 mr-3"></i>
+              <span>LMS integration support</span>
+            </li>
+            <li class="flex items-center">
+              <i class="pi pi-check text-primary-500 mr-3"></i>
+              <span>Student data protection</span>
+            </li>
+            <li class="flex items-center">
+              <i class="pi pi-check text-primary-500 mr-3"></i>
+              <span>Scalable for peak usage</span>
+            </li>
+            <li class="flex items-center">
+              <i class="pi pi-check text-primary-500 mr-3"></i>
+              <span>Educational discounts</span>
+            </li>
+          </ul>
+          <p-button label="Learn More" icon="pi pi-arrow-right" class="w-full"></p-button>
+        </ng-template>
+      </p-card>
+
+      <p-card class="h-full hover:shadow-xl transition-shadow duration-300">
+        <ng-template pTemplate="header">
+          <div class="p-6 text-center bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-900/20 dark:to-purple-800/20">
+            <i class="pi pi-building text-5xl text-primary-500 mb-4"></i>
+            <h3 class="text-xl font-semibold text-surface-900 dark:text-surface-0">Enterprise</h3>
+          </div>
+        </ng-template>
+        <ng-template pTemplate="content">
+          <p class="text-surface-600 dark:text-surface-400 mb-6">
+            Enterprise-grade hosting with dedicated resources, advanced security, and 24/7 dedicated support.
+          </p>
+          <ul class="space-y-3 text-sm mb-6">
+            <li class="flex items-center">
+              <i class="pi pi-check text-primary-500 mr-3"></i>
+              <span>Dedicated servers</span>
+            </li>
+            <li class="flex items-center">
+              <i class="pi pi-check text-primary-500 mr-3"></i>
+              <span>Advanced security suite</span>
+            </li>
+            <li class="flex items-center">
+              <i class="pi pi-check text-primary-500 mr-3"></i>
+              <span>SLA guarantees</span>
+            </li>
+            <li class="flex items-center">
+              <i class="pi pi-check text-primary-500 mr-3"></i>
+              <span>Custom solutions</span>
+            </li>
+          </ul>
+          <p-button label="Learn More" icon="pi pi-arrow-right" class="w-full"></p-button>
+        </ng-template>
+      </p-card>
+
+      <p-card class="h-full hover:shadow-xl transition-shadow duration-300">
+        <ng-template pTemplate="header">
+          <div class="p-6 text-center bg-gradient-to-br from-orange-50 to-orange-100 dark:from-orange-900/20 dark:to-orange-800/20">
+            <i class="pi pi-code text-5xl text-primary-500 mb-4"></i>
+            <h3 class="text-xl font-semibold text-surface-900 dark:text-surface-0">Development</h3>
+          </div>
+        </ng-template>
+        <ng-template pTemplate="content">
+          <p class="text-surface-600 dark:text-surface-400 mb-6">
+            Developer-friendly hosting with staging environments, Git integration, and modern development tools.
+          </p>
+          <ul class="space-y-3 text-sm mb-6">
+            <li class="flex items-center">
+              <i class="pi pi-check text-primary-500 mr-3"></i>
+              <span>Staging environments</span>
+            </li>
+            <li class="flex items-center">
+              <i class="pi pi-check text-primary-500 mr-3"></i>
+              <span>Git deployment</span>
+            </li>
+            <li class="flex items-center">
+              <i class="pi pi-check text-primary-500 mr-3"></i>
+              <span>Multiple PHP versions</span>
+            </li>
+            <li class="flex items-center">
+              <i class="pi pi-check text-primary-500 mr-3"></i>
+              <span>SSH access</span>
+            </li>
+          </ul>
+          <p-button label="Learn More" icon="pi pi-arrow-right" class="w-full"></p-button>
+        </ng-template>
+      </p-card>
+
+      <p-card class="h-full hover:shadow-xl transition-shadow duration-300">
+        <ng-template pTemplate="header">
+          <div class="p-6 text-center bg-gradient-to-br from-teal-50 to-teal-100 dark:from-teal-900/20 dark:to-teal-800/20">
+            <i class="pi pi-megaphone text-5xl text-primary-500 mb-4"></i>
+            <h3 class="text-xl font-semibold text-surface-900 dark:text-surface-0">Marketing</h3>
+          </div>
+        </ng-template>
+        <ng-template pTemplate="content">
+          <p class="text-surface-600 dark:text-surface-400 mb-6">
+            High-converting hosting for marketing agencies, landing pages, and campaign websites.
+          </p>
+          <ul class="space-y-3 text-sm mb-6">
+            <li class="flex items-center">
+              <i class="pi pi-check text-primary-500 mr-3"></i>
+              <span>Fast loading speeds</span>
+            </li>
+            <li class="flex items-center">
+              <i class="pi pi-check text-primary-500 mr-3"></i>
+              <span>Analytics integration</span>
+            </li>
+            <li class="flex items-center">
+              <i class="pi pi-check text-primary-500 mr-3"></i>
+              <span>A/B testing support</span>
+            </li>
+            <li class="flex items-center">
+              <i class="pi pi-check text-primary-500 mr-3"></i>
+              <span>SEO optimization</span>
+            </li>
+          </ul>
+          <p-button label="Learn More" icon="pi pi-arrow-right" class="w-full"></p-button>
+        </ng-template>
+      </p-card>
+
+      <p-card class="h-full hover:shadow-xl transition-shadow duration-300">
+        <ng-template pTemplate="header">
+          <div class="p-6 text-center bg-gradient-to-br from-red-50 to-red-100 dark:from-red-900/20 dark:to-red-800/20">
+            <i class="pi pi-heart text-5xl text-primary-500 mb-4"></i>
+            <h3 class="text-xl font-semibold text-surface-900 dark:text-surface-0">Healthcare</h3>
+          </div>
+        </ng-template>
+        <ng-template pTemplate="content">
+          <p class="text-surface-600 dark:text-surface-400 mb-6">
+            HIPAA-compliant hosting for healthcare providers, patient portals, and medical applications.
+          </p>
+          <ul class="space-y-3 text-sm mb-6">
+            <li class="flex items-center">
+              <i class="pi pi-check text-primary-500 mr-3"></i>
+              <span>HIPAA compliance</span>
+            </li>
+            <li class="flex items-center">
+              <i class="pi pi-check text-primary-500 mr-3"></i>
+              <span>Data encryption</span>
+            </li>
+            <li class="flex items-center">
+              <i class="pi pi-check text-primary-500 mr-3"></i>
+              <span>Audit logging</span>
+            </li>
+            <li class="flex items-center">
+              <i class="pi pi-check text-primary-500 mr-3"></i>
+              <span>Backup & recovery</span>
+            </li>
+          </ul>
+          <p-button label="Learn More" icon="pi pi-arrow-right" class="w-full"></p-button>
+        </ng-template>
+      </p-card>
+    </div>
+  </app-section-layout>
+
+  <app-section-layout 
+    title="Technology Stack"
+    subtitle="Modern technologies and frameworks we support"
+    backgroundColor="bg-surface-50 dark:bg-surface-900">
+    
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="text-center p-6 bg-white dark:bg-surface-800 rounded-lg shadow-sm">
+        <div class="w-16 h-16 bg-blue-100 dark:bg-blue-900/30 rounded-lg flex items-center justify-center mx-auto mb-4">
+          <i class="pi pi-code text-2xl text-primary-500"></i>
+        </div>
+        <h3 class="text-lg font-semibold mb-2">PHP</h3>
+        <p class="text-surface-600 dark:text-surface-400 text-sm">Multiple PHP versions including 8.1, 8.2, 8.3</p>
+      </div>
+
+      <div class="text-center p-6 bg-white dark:bg-surface-800 rounded-lg shadow-sm">
+        <div class="w-16 h-16 bg-green-100 dark:bg-green-900/30 rounded-lg flex items-center justify-center mx-auto mb-4">
+          <i class="pi pi-database text-2xl text-primary-500"></i>
+        </div>
+        <h3 class="text-lg font-semibold mb-2">MySQL</h3>
+        <p class="text-surface-600 dark:text-surface-400 text-sm">Latest MySQL and MariaDB versions</p>
+      </div>
+
+      <div class="text-center p-6 bg-white dark:bg-surface-800 rounded-lg shadow-sm">
+        <div class="w-16 h-16 bg-purple-100 dark:bg-purple-900/30 rounded-lg flex items-center justify-center mx-auto mb-4">
+          <i class="pi pi-globe text-2xl text-primary-500"></i>
+        </div>
+        <h3 class="text-lg font-semibold mb-2">WordPress</h3>
+        <p class="text-surface-600 dark:text-surface-400 text-sm">One-click WordPress installation</p>
+      </div>
+
+      <div class="text-center p-6 bg-white dark:bg-surface-800 rounded-lg shadow-sm">
+        <div class="w-16 h-16 bg-orange-100 dark:bg-orange-900/30 rounded-lg flex items-center justify-center mx-auto mb-4">
+          <i class="pi pi-shield text-2xl text-primary-500"></i>
+        </div>
+        <h3 class="text-lg font-semibold mb-2">SSL</h3>
+        <p class="text-surface-600 dark:text-surface-400 text-sm">Free SSL certificates included</p>
+      </div>
+    </div>
+  </app-section-layout>
+
+  <app-section-layout 
+    title="Why Choose Our Solutions?"
+    subtitle="What makes our hosting solutions stand out">
+    
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="text-center">
+        <div class="w-20 h-20 bg-primary-100 dark:bg-primary-900/30 rounded-full flex items-center justify-center mx-auto mb-6">
+          <i class="pi pi-bolt text-3xl text-primary-500"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-4">Lightning Fast</h3>
+        <p class="text-surface-600 dark:text-surface-400">
+          Our servers are optimized for speed with SSD storage, CDN integration, and advanced caching.
+        </p>
+      </div>
+
+      <div class="text-center">
+        <div class="w-20 h-20 bg-primary-100 dark:bg-primary-900/30 rounded-full flex items-center justify-center mx-auto mb-6">
+          <i class="pi pi-shield text-3xl text-primary-500"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-4">Secure & Reliable</h3>
+        <p class="text-surface-600 dark:text-surface-400">
+          Enterprise-grade security with 99.9% uptime guarantee and daily automated backups.
+        </p>
+      </div>
+
+      <div class="text-center">
+        <div class="w-20 h-20 bg-primary-100 dark:bg-primary-900/30 rounded-full flex items-center justify-center mx-auto mb-6">
+          <i class="pi pi-users text-3xl text-primary-500"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-4">Expert Support</h3>
+        <p class="text-surface-600 dark:text-surface-400">
+          Our technical experts are available 24/7 to help you succeed with your hosting needs.
+        </p>
+      </div>
+    </div>
+  </app-section-layout>
+
+  <app-section-layout 
+    title="Ready to Find Your Solution?"
+    subtitle="Get started with the perfect hosting solution for your business"
+    backgroundColor="bg-surface-50 dark:bg-surface-900">
+    
+    <div class="text-center">
+      <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+        <p-button label="Get Started" icon="pi pi-rocket" class="p-button-lg"></p-button>
+        <p-button label="Contact Sales" icon="pi pi-phone" class="p-button-outlined p-button-lg"></p-button>
+      </div>
+      <p class="text-surface-600 dark:text-surface-400">
+        Free consultation • Custom solutions • 30-day money-back guarantee
+      </p>
+    </div>
+  </app-section-layout>
+</app-page-layout>

@@ -1,0 +1,150 @@
+<app-page-layout>
+  <app-hero-section 
+    title="Powerful Hosting Solutions"
+    subtitle="Everything you need to build, deploy, and scale your web applications">
+    <p-button label="Get Started" icon="pi pi-rocket" class="p-button-lg"></p-button>
+    <p-button label="View Pricing" icon="pi pi-dollar" routerLink="/pricing" class="p-button-outlined p-button-lg"></p-button>
+  </app-hero-section>
+
+  <app-section-layout 
+    title="Why Choose Netzica?"
+    subtitle="Discover the features that make us the preferred choice for developers and businesses">
+    
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <p-card class="text-center hover:shadow-xl transition-shadow duration-300">
+        <ng-template pTemplate="header">
+          <div class="p-6 bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20">
+            <i class="pi pi-shield text-5xl text-primary-500"></i>
+          </div>
+        </ng-template>
+        <ng-template pTemplate="content">
+          <h3 class="text-xl font-semibold mb-4">Enterprise Security</h3>
+          <p class="text-surface-600 dark:text-surface-400">
+            Advanced security measures including SSL certificates, DDoS protection, and automated backups keep your data safe.
+          </p>
+        </ng-template>
+      </p-card>
+
+      <p-card class="text-center hover:shadow-xl transition-shadow duration-300">
+        <ng-template pTemplate="header">
+          <div class="p-6 bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900/20 dark:to-green-800/20">
+            <i class="pi pi-bolt text-5xl text-primary-500"></i>
+          </div>
+        </ng-template>
+        <ng-template pTemplate="content">
+          <h3 class="text-xl font-semibold mb-4">Lightning Fast</h3>
+          <p class="text-surface-600 dark:text-surface-400">
+            SSD storage, CDN integration, and optimized servers ensure your websites load at lightning speed.
+          </p>
+        </ng-template>
+      </p-card>
+
+      <p-card class="text-center hover:shadow-xl transition-shadow duration-300">
+        <ng-template pTemplate="header">
+          <div class="p-6 bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-900/20 dark:to-purple-800/20">
+            <i class="pi pi-cog text-5xl text-primary-500"></i>
+          </div>
+        </ng-template>
+        <ng-template pTemplate="content">
+          <h3 class="text-xl font-semibold mb-4">Easy Management</h3>
+          <p class="text-surface-600 dark:text-surface-400">
+            Intuitive control panel and one-click installations make managing your hosting effortless.
+          </p>
+        </ng-template>
+      </p-card>
+    </div>
+  </app-section-layout>
+
+  <app-section-layout 
+    title="Our Solutions"
+    subtitle="Choose the perfect hosting solution for your needs"
+    backgroundColor="bg-surface-50 dark:bg-surface-900">
+    
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="bg-white dark:bg-surface-800 p-8 rounded-lg shadow-sm">
+        <div class="flex items-center mb-6">
+          <div class="w-16 h-16 bg-blue-100 dark:bg-blue-900/30 rounded-lg flex items-center justify-center mr-6">
+            <i class="pi pi-globe text-2xl text-primary-500"></i>
+          </div>
+          <div>
+            <h3 class="text-2xl font-semibold text-surface-900 dark:text-surface-0">Web Hosting</h3>
+            <p class="text-surface-600 dark:text-surface-400">Perfect for small to medium websites</p>
+          </div>
+        </div>
+        <ul class="space-y-3 mb-6">
+          <li class="flex items-center">
+            <i class="pi pi-check text-primary-500 mr-3"></i>
+            <span>Shared hosting with cPanel</span>
+          </li>
+          <li class="flex items-center">
+            <i class="pi pi-check text-primary-500 mr-3"></i>
+            <span>Free SSL certificate</span>
+          </li>
+          <li class="flex items-center">
+            <i class="pi pi-check text-primary-500 mr-3"></i>
+            <span>Daily automated backups</span>
+          </li>
+          <li class="flex items-center">
+            <i class="pi pi-check text-primary-500 mr-3"></i>
+            <span>24/7 technical support</span>
+          </li>
+        </ul>
+        <p-button label="Learn More" icon="pi pi-arrow-right" class="w-full"></p-button>
+      </div>
+
+      <div class="bg-white dark:bg-surface-800 p-8 rounded-lg shadow-sm">
+        <div class="flex items-center mb-6">
+          <div class="w-16 h-16 bg-green-100 dark:bg-green-900/30 rounded-lg flex items-center justify-center mr-6">
+            <i class="pi pi-server text-2xl text-primary-500"></i>
+          </div>
+          <div>
+            <h3 class="text-2xl font-semibold text-surface-900 dark:text-surface-0">VPS Hosting</h3>
+            <p class="text-surface-600 dark:text-surface-400">Dedicated resources for growing businesses</p>
+          </div>
+        </div>
+        <ul class="space-y-3 mb-6">
+          <li class="flex items-center">
+            <i class="pi pi-check text-primary-500 mr-3"></i>
+            <span>Dedicated CPU and RAM</span>
+          </li>
+          <li class="flex items-center">
+            <i class="pi pi-check text-primary-500 mr-3"></i>
+            <span>Full root access</span>
+          </li>
+          <li class="flex items-center">
+            <i class="pi pi-check text-primary-500 mr-3"></i>
+            <span>SSD storage included</span>
+          </li>
+          <li class="flex items-center">
+            <i class="pi pi-check text-primary-500 mr-3"></i>
+            <span>Scalable resources</span>
+          </li>
+        </ul>
+        <p-button label="Learn More" icon="pi pi-arrow-right" class="w-full"></p-button>
+      </div>
+    </div>
+  </app-section-layout>
+
+  <app-section-layout 
+    title="What Our Customers Say"
+    subtitle="Join thousands of satisfied customers who trust Netzica with their hosting needs">
+    
+    <app-testimonials [testimonials]="testimonials"></app-testimonials>
+  </app-section-layout>
+
+  <app-section-layout 
+    title="Ready to Get Started?"
+    subtitle="Join thousands of developers and businesses who trust Netzica for their hosting needs"
+    backgroundColor="bg-surface-50 dark:bg-surface-900">
+    
+    <div class="text-center">
+      <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+        <p-button label="Start Your Journey" icon="pi pi-rocket" class="p-button-lg"></p-button>
+        <p-button label="Contact Sales" icon="pi pi-phone" class="p-button-outlined p-button-lg"></p-button>
+      </div>
+      <p class="text-surface-600 dark:text-surface-400">
+        No setup fees • 30-day money-back guarantee • 24/7 support
+      </p>
+    </div>
+  </app-section-layout>
+</app-page-layout>

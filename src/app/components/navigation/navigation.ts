@@ -1,16 +1,17 @@
 import { Component, OnInit, signal } from '@angular/core';
-import { MenuItem } from 'primeng/api';
+import { MegaMenuItem, MenuItem } from 'primeng/api';
+import { RouterModule } from '@angular/router';
 import { ImportsModule } from '../../imports';
-
 @Component({
     selector: 'app-navigation',
     standalone: true,
-    imports: [ImportsModule],
+    imports: [ImportsModule, RouterModule],
     templateUrl: './navigation.html',
     styleUrl: './navigation.scss',
 })
 export class NavigationComponent implements OnInit {
     items: MenuItem[] | undefined;
+    megaMenuItems: MegaMenuItem[] | undefined;
     mobileMenuOpen = signal(false);
 
     ngOnInit() {
@@ -21,14 +22,17 @@ export class NavigationComponent implements OnInit {
                     {
                         label: 'Features',
                         icon: 'pi pi-th-large',
+                        routerLink: '/products',
                     },
                     {
                         label: 'Solutions',
                         icon: 'pi pi-microchip',
+                        routerLink: '/solutions',
                     },
                     {
                         label: 'Customers',
                         icon: 'pi pi-users',
+                        routerLink: '/products',
                     },
                     {
                         label: 'Support',
@@ -37,10 +41,12 @@ export class NavigationComponent implements OnInit {
                             {
                                 label: 'Help Center',
                                 icon: 'pi pi-user',
+                                routerLink: '/support',
                             },
                             {
                                 label: 'FAQ',
                                 icon: 'pi pi-question-circle',
+                                routerLink: '/faq',
                             },
                         ],
                     },
@@ -48,12 +54,11 @@ export class NavigationComponent implements OnInit {
             },
             {
                 label: 'Corporate',
-            },
-            {
-                label: 'Resources',
+                routerLink: '/corporate',
             },
             {
                 label: 'Pricing',
+                routerLink: '/pricing',
             },
         ];
     }

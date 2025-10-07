@@ -10,10 +10,12 @@
 
     <!-- Timeline Component -->
     <div class="card">
-      <p-timeline [value]="timelineEvents" align="alternate" class="customized-timeline">
+      @if(isDesktop()) {
+      <p-timeline [value]="events" align="alternate" class="customized-timeline">
         <ng-template #marker let-event>
-          <span class="flex w-12 h-12 items-center justify-center text-white rounded-full z-10 shadow-sm font-bold text-lg" 
-                [style]="{ 'background-color': event.color }">
+          <span
+            class="flex w-12 h-12 items-center justify-center text-white rounded-full z-10 shadow-sm font-bold text-lg"
+            [style]="{ 'background-color': event.color }">
             {{ event.id }}
           </span>
         </ng-template>
@@ -21,21 +23,21 @@
           <p-card [header]="event.title" class="feature-card">
             <div class="flex flex-col gap-6 items-center">
               <div class="flex-shrink-0">
-                <img [src]="event.image" 
-                     [alt]="event.title" 
-                     class="rounded-lg shadow-lg"
-                     [style.width]="event.imageWidth">
+                @if(event.image) {
+                <img [src]="event.image" [alt]="event.title" class="rounded-lg shadow-lg"
+                  [style.width]="event.imageWidth">
+                }
               </div>
-              <div class="flex-1">
+              <div class="flex-1 text-left">
                 <p class="text-surface-600 dark:text-surface-300 mb-6">
                   {{ event.description }}
                 </p>
                 <div class="space-y-3">
                   @for (benefit of event.benefits; track benefit.title) {
-                    <p class="text-surface-900 dark:text-surface-0">
-                      <span class="font-semibold">{{ benefit.title }}</span>
-                      <span class="text-surface-600 dark:text-surface-300"> {{ benefit.description }}</span>
-                    </p>
+                  <p class="text-surface-900 dark:text-surface-0">
+                    <span class="font-semibold">{{ benefit.title }}</span>
+                    <span class="text-surface-600 dark:text-surface-300"> {{ benefit.description }}</span>
+                  </p>
                   }
                 </div>
               </div>
@@ -43,6 +45,28 @@
           </p-card>
         </ng-template>
       </p-timeline>
+      } @else {
+      <p-timeline [value]="events" class="customized-timeline" align="left">
+        <ng-template #marker let-event>
+          <span class="flex w-8 h-8 items-center justify-center text-white rounded-full z-10 shadow-sm"
+            [style]="{ 'background-color': event.color }">
+            {{ event.id }}
+          </span>
+        </ng-template>
+        <ng-template #content let-event>
+          <p-card [header]="event.status" [subheader]="event.date" class="timeline-card">
+            <p class="mb-4">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae
+              numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis
+              esse,
+              cupiditate
+              neque quas!
+            </p>
+            <p-button label="Read more" [text]="true" />
+          </p-card>
+        </ng-template>
+      </p-timeline>
+      }
     </div>
   </div>
 </div>

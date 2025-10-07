@@ -1,0 +1,25 @@
+.clouds-separator {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  background-color: #4aabde;
+  height: 100px;
+}
+
+.clouds-separator-bg-container {
+  width: 100%;
+  margin: 0 auto;
+  background-repeat: repeat-x;
+}
+
+.clouds-separator-bg {
+  background-image: url("/clouds-4.png");
+  background-repeat: repeat-x;
+  position: absolute;
+  top: 0px;
+  z-index: 0;
+  width: 100%;
+  height: 100px;
+  background-position: center top;
+  transform: rotate(180deg);
+}

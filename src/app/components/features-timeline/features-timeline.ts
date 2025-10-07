@@ -1,68 +1,95 @@
-import { Component } from '@angular/core';
-import { ImportsModule } from '../../imports';
+import { Component, signal, HostListener } from '@angular/core';
+import { Timeline } from 'primeng/timeline';
+import { CardModule } from 'primeng/card';
+import { ButtonModule } from 'primeng/button';
+
+interface EventItem {
+    status?: string;
+    date?: string;
+    icon?: string;
+    color?: string;
+    image?: string;
+    title?: string;
+    description?: string;
+    benefits?: Array<{title: string, description: string}>;
+    imageWidth?: string;
+    id?: string;
+}
 
 @Component({
-  selector: 'app-features-timeline',
-  standalone: true,
-  imports: [ImportsModule],
-  templateUrl: './features-timeline.html',
-  styleUrl: './features-timeline.scss'
+    selector: 'app-features-timeline',
+    templateUrl: './features-timeline.html',
+    styleUrl: './features-timeline.scss',
+    standalone: true,
+    imports: [Timeline, CardModule, ButtonModule]
 })
 export class FeaturesTimelineComponent {
-  timelineEvents = [
-    {
-      id: 1,
-      title: 'Ornare Arcu Odio',
-      description: 'Quisque sagittis purus sit amet volutpat consequat mauris nunc. Scelerisque eleifend.',
-      image: 'https://fqjltiegiezfetthbags.supabase.co/storage/v1/render/image/public/block.images/blocks/feature/timeline-1.png',
-      imageWidth: '23rem',
-      color: 'var(--p-primary-color)',
-      benefits: [
-        {
-          title: 'Sed lectus vestibulum',
-          description: 'mattis ullamcorper velit. Laoreet sit amet cursus sit.'
-        },
-        {
-          title: 'Fames ac turpis',
-          description: 'egestas sed tempus urna et. Cursus turpis massa.'
-        }
-      ]
-    },
-    {
-      id: 2,
-      title: 'A diam maecenas',
-      description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.',
-      image: 'https://fqjltiegiezfetthbags.supabase.co/storage/v1/render/image/public/block.images/blocks/feature/timeline-2.png',
-      imageWidth: '14rem',
-      color: 'var(--p-primary-color)',
-      benefits: [
-        {
-          title: 'Quis hendrerit dolor',
-          description: 'magna eget est. Pellentesque pulvinar pellentesque.'
-        },
-        {
-          title: 'Lectus urna duis',
-          description: 'convallis convallis tellus id interdum velit laoreet.'
-        }
-      ]
-    },
-    {
-      id: 3,
-      title: 'Pharetra et ultrices neque',
-      description: 'Id interdum velit laoreet id. A iaculis at erat pellentesque adipiscing commodo elit at imperdiet.',
-      image: 'https://fqjltiegiezfetthbags.supabase.co/storage/v1/render/image/public/block.images/blocks/feature/timeline-3.png',
-      imageWidth: '25rem',
-      color: 'var(--p-primary-color)',
-      benefits: [
-        {
-          title: 'Egestas dui id',
-          description: 'ornare arcu odio ut. Mi bibendum neque egestas congue.'
-        },
-        {
-          title: 'Sed velit dignissim',
-          description: 'sodales ut eu. Massa placerat duis ultricies lacus.'
-        }
-      ]
+    events: EventItem[];
+    isDesktop = signal(window.innerWidth > 768);
+
+    constructor() {
+        this.events = [
+            { 
+                status: 'Ordered', 
+                date: '15/10/2020 10:30', 
+                icon: 'pi pi-shopping-cart', 
+                color: '#9C27B0', 
+                title: 'Web & Domains',
+                description: 'Integrated with all the leading web hosting control panels and domain registrars for automatic provisioning and management.',
+                benefits: [
+                    { title: 'Real-time tracking', description: 'Monitor webs in real-time' },
+                    { title: 'Automated workflows', description: 'Reduce manual processing time' }
+                ],
+                imageWidth: '300px',
+                id: '1'
+            },
+            { 
+                status: 'Processing', 
+                date: '15/10/2020 14:00', 
+                icon: 'pi pi-cog', 
+                color: '#673AB7',
+                title: 'Secure & Scalable',
+                description: 'High-performance servers with advanced security features and scalable infrastructure to handle your growing traffic.',
+                benefits: [
+                    { title: 'AI-powered insights', description: 'Get actionable business insights' },
+                    { title: 'Scalable infrastructure', description: 'Grows with your business' }
+                ],
+                imageWidth: '300px',
+                id: '2'
+            },
+            { 
+                status: 'Shipped', 
+                date: '15/10/2020 16:15', 
+                icon: 'pi pi-truck', 
+                color: '#FF9800',
+                title: 'Developer Friendly',
+                description: 'Easy to integrate with your existing tools and workflows, and our API allows you to automate your web hosting and domain management.',
+                benefits: [
+                    { title: 'API access', description: 'Integrate with your existing tools' },
+                    { title: 'Developer tools', description: 'Easy to integrate with your existing tools and workflows' }
+                ],
+                imageWidth: '300px',
+                id: '3'
+            },
+            { 
+                status: 'Delivered', 
+                date: '16/10/2020 10:00', 
+                icon: 'pi pi-check', 
+                color: '#607D8B',
+                title: 'Reliable Support',
+                description: '24/7 customer support to help you with any issues or questions you may have.',
+                benefits: [
+                    { title: '24/7 support', description: 'Get help anytime' },
+                    { title: 'Knowledge base', description: 'Find answers to your questions' }
+                ],
+                imageWidth: '300px',
+                id: '4'
+            }
+        ];
     }
-  ];
+
+    @HostListener('window:resize', ['$event'])
+    onResize() {
+        this.isDesktop.set(window.innerWidth > 768);
+    }
 }

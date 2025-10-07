@@ -3,11 +3,12 @@ import { CommonModule } from '@angular/common';
 import { ButtonModule } from 'primeng/button';
 import { ToggleSwitchModule } from 'primeng/toggleswitch';
 import { FormsModule } from '@angular/forms';
+import { BadgeModule } from 'primeng/badge';
 
 @Component({
     selector: 'three-tiers',
     standalone: true,
-    imports: [CommonModule, ButtonModule, ToggleSwitchModule, FormsModule],
+    imports: [CommonModule, ButtonModule, ToggleSwitchModule, FormsModule, BadgeModule],
     templateUrl: './threetiers.html',
 })
 export class ThreeTiers {
@@ -16,38 +17,47 @@ export class ThreeTiers {
     pricingPlans = [
         {
             name: 'Basic',
-            description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit numquam eligendi quos.',
+            description: 'Ideal for small businesses and personal websites.',
             monthlyPrice: 9,
             yearlyPrice: 108,
             features: [
-                'Arcu vitae elementum',
-                'Dui faucibus in ornare',
-                'Morbi tincidunt augue'
+                '10 GB SSD Storage',
+                'Unlimited Bandwidth',
+                'Free SSL Certificate',
+                'WordPress Installation',
+                '24/7 Support',
+                '99.9% Uptime Guarantee',
+                'Free Domain (1st year)'
             ]
         },
         {
             name: 'Premium',
-            description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit numquam eligendi quos.',
+            description: 'For growing businesses with more complex needs.',
             monthlyPrice: 29,
             yearlyPrice: 348,
             features: [
-                'Arcu vitae elementum',
-                'Dui faucibus in ornare',
-                'Morbi tincidunt augue',
-                'Duis ultricies lacus sed'
+                '100 GB SSD Storage',
+                'Unlimited Bandwidth',
+                'Free SSL Certificate',
+                'WordPress Installation',
+                'Priority Support',
+                '99.9% Uptime Guarantee',
+                'Free Domain (1st year)'
             ]
         },
         {
             name: 'Enterprise',
-            description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit numquam eligendi quos.',
+            description: 'For large enterprises and organizations with complex needs.',
             monthlyPrice: 49,
             yearlyPrice: 588,
             features: [
-                'Arcu vitae elementum',
-                'Dui faucibus in ornare',
-                'Morbi tincidunt augue',
-                'Duis ultricies lacus sed',
-                'Imperdiet proin'
+                '1TB SSD Storage',
+                'Unlimited Bandwidth',
+                'Free SSL Certificate',
+                'Managed WordPress',
+                'Dedicated Support',
+                '99.9% Uptime Guarantee',
+                'Multiple Domains'
             ]
         }
     ];

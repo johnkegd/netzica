@@ -1,0 +1,43 @@
+<div class="hero-3d-emoji">
+  <!-- Main Content Section -->
+  <div class="hero-content">
+    <div class="hero-text-section">
+      <span class="hero-badge">Internet</span>
+      <h3 class="hero-title">
+        Web Hosting Made Easy<br>
+        <span class="hero-highlight">Start today</span>
+      </h3>
+    </div>
+
+    <div class="hero-actions">
+      <ng-content select="[firstContainer]"></ng-content>
+      <p-button [label]="primaryButtonText" size="large" routerLink="/pricing" class="p-button-lg p-button-rounded"></p-button>
+      @if(secondaryButtonVisible) {
+        <p-button [label]="secondaryButtonText" size="large" class="p-button-lg p-button-rounded p-button-text"></p-button>
+      }
+      <ng-content select="[secondContainer]"></ng-content>
+    </div>
+
+    <!-- 3D Images Container -->
+    <div class="hero-3d-images">
+      <div class="hero-3d-container">
+        <img
+          src="https://fqjltiegiezfetthbags.supabase.co/storage/v1/render/image/public/block.images/blocks/hero/hero-3d-light.jpg"
+          alt="3D Light Theme" class="hero-3d-image hero-3d-light">
+        <img
+          src="https://fqjltiegiezfetthbags.supabase.co/storage/v1/render/image/public/block.images/blocks/hero/hero-3d-dark.jpg"
+          alt="3D Dark Theme" class="hero-3d-image hero-3d-dark">
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Emoji Elements -->
+  <img src="/cloud-1.png"
+    alt="Floating Element 1" class="floating-emoji floating-emoji-1 w-10 shadow-lg">
+  <img src="/cloud-2.png"
+    alt="Floating Element 2" class="floating-emoji floating-emoji-2 w-10 shadow-lg">
+  <img src="/cloud-3.png"
+    alt="Floating Element 3" class="floating-emoji floating-emoji-3 w-10 shadow-lg">
+  <img src="/cloud-1.png"
+    alt="Floating Element 4" class="floating-emoji floating-emoji-4 w-10 shadow-lg">
+</div>

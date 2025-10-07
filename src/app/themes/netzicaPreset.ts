@@ -4,17 +4,17 @@ import Aura from "@primeuix/themes/aura";
 export const NetzicaPreset = definePreset(Aura, {
     semantic: {
         primary: {
-            50: '{emerald.50}',
-            100: '{emerald.100}',
-            200: '{emerald.200}',
-            300: '{emerald.300}',
-            400: '{emerald.400}',
-            500: '{emerald.800}',
-            600: '{emerald.600}',
-            700: '{emerald.700}',
-            800: '{emerald.800}',
-            900: '{emerald.900}',
-            950: '{emerald.950}'
+            50: '{red.50}',
+            100: '{red.100}',
+            200: '{red.200}',
+            300: '{red.300}',
+            400: '{red.400}',
+            500: '{red.700}',
+            600: '{red.600}',
+            700: '{red.700}',
+            800: '{red.800}',
+            900: '{red.900}',
+            950: '{red.950}'
         }
     }
 });

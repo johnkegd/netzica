@@ -7,11 +7,12 @@ import { CardModule } from 'primeng/card';
 import { MessageModule } from 'primeng/message';
 import { environment } from '@environments/environment';
 import { ConstructionAuthService } from '../../services/construction-auth.service';
+import { NavigationComponent } from '../../components/navigation/navigation';
 
 @Component({
   selector: 'app-construction',
   standalone: true,
-  imports: [CommonModule, FormsModule,ReactiveFormsModule, InputTextModule, ButtonModule, CardModule, MessageModule],
+  imports: [CommonModule, FormsModule,ReactiveFormsModule, InputTextModule, ButtonModule, CardModule, MessageModule, NavigationComponent],
   templateUrl: './construction.html',
   styleUrl: './construction.scss'
 })

@@ -1,0 +1,194 @@
+<app-page-layout>
+  <app-hero-section 
+    title="About Netzica"
+    subtitle="Empowering businesses with reliable, secure, and scalable hosting solutions">
+    <p-button label="Our Story" icon="pi pi-book" class="p-button-lg"></p-button>
+    <p-button label="Contact Us" icon="pi pi-envelope" class="p-button-outlined p-button-lg"></p-button>
+  </app-hero-section>
+
+  <app-section-layout 
+    title="Our Story"
+    subtitle="Building the future of web hosting, one server at a time">
+    
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <h3 class="text-2xl font-semibold text-surface-900 dark:text-surface-0 mb-6">Founded on Excellence</h3>
+        <p class="text-lg text-surface-600 dark:text-surface-400 mb-6">
+          Netzica was founded in 2015 with a simple mission: to provide reliable, fast, and secure hosting solutions 
+          that empower businesses to succeed online. What started as a small team of passionate developers has grown 
+          into a trusted partner for thousands of companies worldwide.
+        </p>
+        <p class="text-lg text-surface-600 dark:text-surface-400 mb-8">
+          We believe that every business deserves access to enterprise-grade hosting infrastructure, regardless of size. 
+          That's why we've built our platform with cutting-edge technology, 24/7 support, and transparent pricing.
+        </p>
+        <div class="grid grid-cols-3 gap-6">
+          <div class="text-center">
+            <div class="text-3xl font-bold text-primary-500 mb-2">50K+</div>
+            <div class="text-sm text-surface-600 dark:text-surface-400">Websites Hosted</div>
+          </div>
+          <div class="text-center">
+            <div class="text-3xl font-bold text-primary-500 mb-2">99.9%</div>
+            <div class="text-sm text-surface-600 dark:text-surface-400">Uptime Guarantee</div>
+          </div>
+          <div class="text-center">
+            <div class="text-3xl font-bold text-primary-500 mb-2">24/7</div>
+            <div class="text-sm text-surface-600 dark:text-surface-400">Support</div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-gradient-to-br from-primary-50 to-primary-100 dark:from-primary-900/20 dark:to-primary-800/20 p-8 rounded-lg">
+        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+             alt="Our Team" class="w-full h-64 object-cover rounded-lg">
+      </div>
+    </div>
+  </app-section-layout>
+
+  <app-section-layout 
+    title="Our Team"
+    subtitle="Meet the experts behind Netzica's success"
+    backgroundColor="bg-surface-50 dark:bg-surface-900">
+    
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <p-card class="text-center">
+        <ng-template pTemplate="header">
+          <div class="p-6">
+            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" 
+                 alt="CEO" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
+          </div>
+        </ng-template>
+        <ng-template pTemplate="content">
+          <h3 class="text-xl font-semibold mb-2">Alex Johnson</h3>
+          <p class="text-primary-500 mb-3">CEO & Founder</p>
+          <p class="text-surface-600 dark:text-surface-400 text-sm">
+            With over 15 years in the hosting industry, Alex leads our vision of making enterprise-grade hosting accessible to everyone.
+          </p>
+        </ng-template>
+      </p-card>
+
+      <p-card class="text-center">
+        <ng-template pTemplate="header">
+          <div class="p-6">
+            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" 
+                 alt="CTO" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
+          </div>
+        </ng-template>
+        <ng-template pTemplate="content">
+          <h3 class="text-xl font-semibold mb-2">Sarah Chen</h3>
+          <p class="text-primary-500 mb-3">Chief Technology Officer</p>
+          <p class="text-surface-600 dark:text-surface-400 text-sm">
+            Sarah oversees our technical infrastructure and ensures our platform remains at the forefront of hosting technology.
+          </p>
+        </ng-template>
+      </p-card>
+
+      <p-card class="text-center">
+        <ng-template pTemplate="header">
+          <div class="p-6">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" 
+                 alt="Support Director" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
+          </div>
+        </ng-template>
+        <ng-template pTemplate="content">
+          <h3 class="text-xl font-semibold mb-2">Michael Rodriguez</h3>
+          <p class="text-primary-500 mb-3">Support Director</p>
+          <p class="text-surface-600 dark:text-surface-400 text-sm">
+            Michael leads our customer support team, ensuring every client receives the help they need when they need it.
+          </p>
+        </ng-template>
+      </p-card>
+    </div>
+  </app-section-layout>
+
+  <app-section-layout 
+    title="Our Services"
+    subtitle="Comprehensive hosting solutions for every need">
+    
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="text-center p-6 bg-white dark:bg-surface-800 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+        <div class="w-16 h-16 bg-blue-100 dark:bg-blue-900/30 rounded-lg flex items-center justify-center mx-auto mb-4">
+          <i class="pi pi-globe text-2xl text-primary-500"></i>
+        </div>
+        <h3 class="text-lg font-semibold mb-2">Web Hosting</h3>
+        <p class="text-surface-600 dark:text-surface-400 text-sm">Shared hosting solutions for small to medium websites</p>
+      </div>
+
+      <div class="text-center p-6 bg-white dark:bg-surface-800 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+        <div class="w-16 h-16 bg-green-100 dark:bg-green-900/30 rounded-lg flex items-center justify-center mx-auto mb-4">
+          <i class="pi pi-server text-2xl text-primary-500"></i>
+        </div>
+        <h3 class="text-lg font-semibold mb-2">VPS Hosting</h3>
+        <p class="text-surface-600 dark:text-surface-400 text-sm">Virtual private servers with dedicated resources</p>
+      </div>
+
+      <div class="text-center p-6 bg-white dark:bg-surface-800 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+        <div class="w-16 h-16 bg-purple-100 dark:bg-purple-900/30 rounded-lg flex items-center justify-center mx-auto mb-4">
+          <i class="pi pi-cloud text-2xl text-primary-500"></i>
+        </div>
+        <h3 class="text-lg font-semibold mb-2">Cloud Hosting</h3>
+        <p class="text-surface-600 dark:text-surface-400 text-sm">Scalable cloud infrastructure for growing businesses</p>
+      </div>
+
+      <div class="text-center p-6 bg-white dark:bg-surface-800 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+        <div class="w-16 h-16 bg-orange-100 dark:bg-orange-900/30 rounded-lg flex items-center justify-center mx-auto mb-4">
+          <i class="pi pi-shield text-2xl text-primary-500"></i>
+        </div>
+        <h3 class="text-lg font-semibold mb-2">Security Services</h3>
+        <p class="text-surface-600 dark:text-surface-400 text-sm">Advanced security and monitoring solutions</p>
+      </div>
+    </div>
+  </app-section-layout>
+
+  <app-section-layout 
+    title="Our Values"
+    subtitle="The principles that guide everything we do"
+    backgroundColor="bg-surface-50 dark:bg-surface-900">
+    
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="text-center">
+        <div class="w-20 h-20 bg-primary-100 dark:bg-primary-900/30 rounded-full flex items-center justify-center mx-auto mb-6">
+          <i class="pi pi-heart text-3xl text-primary-500"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-4">Customer First</h3>
+        <p class="text-surface-600 dark:text-surface-400">
+          Every decision we make is guided by what's best for our customers. Your success is our success.
+        </p>
+      </div>
+
+      <div class="text-center">
+        <div class="w-20 h-20 bg-primary-100 dark:bg-primary-900/30 rounded-full flex items-center justify-center mx-auto mb-6">
+          <i class="pi pi-star text-3xl text-primary-500"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-4">Excellence</h3>
+        <p class="text-surface-600 dark:text-surface-400">
+          We strive for excellence in everything we do, from our technology to our customer service.
+        </p>
+      </div>
+
+      <div class="text-center">
+        <div class="w-20 h-20 bg-primary-100 dark:bg-primary-900/30 rounded-full flex items-center justify-center mx-auto mb-6">
+          <i class="pi pi-users text-3xl text-primary-500"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-4">Transparency</h3>
+        <p class="text-surface-600 dark:text-surface-400">
+          We believe in open communication and transparent pricing. No hidden fees, no surprises.
+        </p>
+      </div>
+    </div>
+  </app-section-layout>
+
+  <app-section-layout 
+    title="Ready to Partner With Us?"
+    subtitle="Join thousands of businesses who trust Netzica for their hosting needs">
+    
+    <div class="text-center">
+      <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+        <p-button label="Get Started" icon="pi pi-rocket" class="p-button-lg"></p-button>
+        <p-button label="Contact Sales" icon="pi pi-phone" class="p-button-outlined p-button-lg"></p-button>
+      </div>
+      <p class="text-surface-600 dark:text-surface-400">
+        Let's build something amazing together
+      </p>
+    </div>
+  </app-section-layout>
+</app-page-layout>

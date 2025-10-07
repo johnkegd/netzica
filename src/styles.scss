@@ -1,2 +1,7 @@
 @use './tailwind.css';
 @use "primeicons/primeicons.css";
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
